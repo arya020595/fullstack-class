@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Write Example</title>
+  </head>
+  <body>
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+
+    <p id="demo"></p>
+
+    <button id="submit">Memunculkan text</button>
+
+    <script>
+      const demo = document.getElementById("demo");
+      const submit = document.getElementById("submit");
+
+      submit.addEventListener("click", () => {
+        demo.innerHTML = "Hai aku muncul";
+        document.body.style.backgroundColor = "red";
+        document.body.style.fontSize = "60px";
+      });
+    </script>
+  </body>
+</html>
